@@ -1,0 +1,285 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+}
+
+h1 {
+  font-size: 48pt;
+  width: 40%;
+  min-width: 700px;
+  display: inline-block;
+}
+
+p {
+  font-size: 20pt;
+}
+
+#navbar {
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#heading {
+  bottom: 0;
+  text-align: center;
+}
+
+#bg {
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+
+#kuce {
+  position: absolute;
+  top: 0;
+  z-index: 500;
+  width: 100%;
+}
+
+#naslov {
+  position: absolute;
+  top: 0;
+  z-index: 510;
+  width: 100%;
+}
+
+#mjesec {
+  position: absolute;
+  top: 0;
+  z-index: 520;
+  width: 90%;
+  transition: transform 2s ease-in-out;
+  padding-left: 7%;
+}
+
+#autor {
+  position: absolute;
+  z-index: 530;
+  width: 100%;
+  padding-top: 42%;
+}
+
+#sponzori {
+  text-align: center;
+}
+
+#footer {
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+}
+
+.sticky {
+  top: 0;
+  width: 100%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  background-color: hsla(0, 0%, 12%, 0.5);
+  z-index: 1000;
+  backdrop-filter: blur(5px) opacity(1);
+  animation: backdropFadeIn 1s;
+}
+
+.navbar-item {
+  display: inline-block;
+  border: 2px solid transparent;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.navbar-item a {
+  display: block;
+  font-family: Alkatra, sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-item:hover {
+  list-style-position: inherit;
+  border: 2px solid white;
+  border-radius: 25px;
+  backdrop-filter: blur(10px);
+  animation: fadeIn 0.5s;
+}
+
+.inline-div {
+  width: 40%;
+  min-width: 700px;
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+.heading-over-image {
+  position: absolute;
+  font-size: 36pt;
+  left: 50%;
+  text-align: center;
+  padding-top: 13%;
+  transform: translate(-50%, -50%);
+}
+
+.background-image {
+  width: 100%;
+  display: block;
+  position: relative;
+  text-align: center;
+}
+
+.sponzori-container {
+  min-width: 350px;
+  width: 33%;
+  display: inline-block;
+}
+
+.sponzori-icons {
+  min-width: 100px;
+  width: 15%;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.sponzori-icons:hover {
+  transform: scale(1.2);
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-cols {
+  width: 25%;
+  border: 2px red;
+  display: inline-block;
+  margin: 0px;
+  outline: none;
+}
+
+.footer-cols-inner {
+  border: 2px black;
+  border-radius: 25px;
+  margin: 2%;
+}
+
+.social-media {
+  width: 30%;
+  padding: 1%;
+  display: inline-block;
+}
+
+.social-media-icons {
+  width: 50%;
+  vertical-align: middle;
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in;
+}
+
+.animate-left {
+  animation: animateLeft 0.6s;
+}
+
+.animate-top {
+  animation: animateTop 1s;
+}
+
+.animate-right {
+  animation: animateRight 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animateLeft {
+  from {
+    left: -200px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animateTop {
+  from {
+    top: -500px;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@keyframes animateRight {
+  from {
+    right: -200px;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@keyframes backdropFadeIn {
+  from {
+    backdrop-filter: blur(5px) opacity(0);
+  }
+  to {
+    backdrop-filter: blur(5px) opacity(1);
+  }
+}
+
+@media only screen and (max-width: 1079px) {
+  .footer-cols {
+    width: 49.6%;
+  }
+
+  .cards {
+    flex-wrap: wrap;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1480px) {
+  #h1-veseli {
+    text-align: right;
+    padding-right: 2%;
+  }
+
+  #h1-orkestar {
+    text-align: left;
+    padding-left: 2%;
+  }
+}
+
+@media only screen and (max-width: 1379px) {
+  #h1-veseli {
+    text-align: center;
+  }
+
+  #h1-orkestar {
+    text-align: center;
+  }
+}
