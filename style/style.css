@@ -71,7 +71,10 @@ p {
 }
 
 #footer {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
   text-align: center;
+  background-color: rgb(20, 34, 63);
 }
 
 .container {
@@ -173,6 +176,10 @@ p {
   border: 2px black;
   border-radius: 25px;
   margin: 2%;
+}
+
+.footer-text {
+  font-size: 10pt;
 }
 
 .social-media {
