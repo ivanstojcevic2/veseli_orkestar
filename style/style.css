@@ -15,6 +15,27 @@ p {
   font-size: 20pt;
 }
 
+button {
+  font-family: "Nunito", sans-serif;
+  font-size: 16pt;
+  color: rgb(20, 34, 63);
+  text-decoration: none;
+  padding: 10px;
+  border: 3px solid rgb(20, 34, 63);
+  border-radius: 50px;
+  background-color: white;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
 #navbar {
   text-align: center;
   width: 100%;
@@ -66,8 +87,19 @@ p {
   padding-top: 42%;
 }
 
+#popis-pjesama-lista {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 2%;
+  font-family: Caveat;
+  font-size: 16pt;
+}
+
 #sponzori {
   text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 #footer {
@@ -75,6 +107,21 @@ p {
   color: white;
   text-align: center;
   background-color: rgb(20, 34, 63);
+}
+
+#footer a {
+  text-decoration: none;
+  color: white;
+}
+
+#bottom {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 8pt;
+  color: white;
+  text-align: center;
+  background-color: rgb(12, 20, 36);
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
 }
 
 .container {
@@ -87,34 +134,14 @@ p {
   width: 100%;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
   overflow: hidden;
-  background-color: hsla(0, 0%, 12%, 0.5);
+  background-color: rgba(20, 34, 63, 0.5);
   z-index: 1000;
   backdrop-filter: blur(5px) opacity(1);
   animation: backdropFadeIn 1s;
 }
 
-.navbar-item {
-  display: inline-block;
-  border: 2px solid transparent;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.navbar-item a {
-  display: block;
-  font-family: Alkatra, sans-serif;
-  text-decoration: none;
-  color: white;
-}
-
-.navbar-item:hover {
-  list-style-position: inherit;
-  border: 2px solid white;
-  border-radius: 25px;
-  backdrop-filter: blur(10px);
-  animation: fadeIn 0.5s;
+.hidden-list-item {
+  display: none;
 }
 
 .inline-div {
@@ -125,12 +152,20 @@ p {
   border: 2px red;
 }
 
-.heading-over-image {
+.podnaslov {
   position: absolute;
   left: 50%;
   text-align: center;
   padding-top: 13%;
   transform: translate(-50%, -50%);
+  font-family: "Nunito", sans-serif;
+  color: rgb(20, 34, 63);
+}
+
+.podnaslov-2 {
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  color: rgb(20, 34, 63);
 }
 
 .background-image {
@@ -138,11 +173,6 @@ p {
   display: block;
   position: relative;
   text-align: center;
-}
-
-.sponzori-container {
-  width: 33%;
-  display: inline-block;
 }
 
 .sponzori-icons {
@@ -189,8 +219,17 @@ p {
 }
 
 .social-media-icons {
-  width: 50%;
+  width: 30%;
   vertical-align: middle;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.social-media-icons:hover {
+  transform: scale(1.2);
 }
 
 .fade-in {
@@ -257,6 +296,10 @@ p {
 }
 
 @media only screen and (max-width: 1079px) {
+  #navbar-container {
+    display: none;
+  }
+
   h1 {
     font-size: 36pt;
     display: block;
@@ -272,6 +315,14 @@ p {
     font-size: 16pt;
   }
 
+  .podnaslov {
+    font-size: 13pt;
+  }
+
+  .podnaslov-2 {
+    font-size: 18pt;
+  }
+
   .footer-cols {
     width: 49.6%;
   }
@@ -285,14 +336,53 @@ p {
     width: 100%;
     display: block;
   }
+
+  .sponzori-container {
+    padding-top: 2%;
+  }
 }
 
 @media only screen and (min-width: 1080px) {
   #autor {
-    font-size: 26pt;
+    font-size: 30pt;
   }
 
   #h1-veseli {
     padding-right: 5%;
+  }
+  .podnaslov {
+    font-size: 26pt;
+  }
+
+  .podnaslov-2 {
+    font-size: 26pt;
+  }
+
+  .navbar-item {
+    display: inline-block;
+    border: 2px solid transparent;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .navbar-item a {
+    display: block;
+    font-family: Alkatra, sans-serif;
+    text-decoration: none;
+    color: white;
+  }
+
+  .navbar-item:hover {
+    list-style-position: inherit;
+    border: 2px solid white;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    animation: fadeIn 0.5s;
+  }
+  .sponzori-container {
+    width: 19%;
+    display: inline-block;
   }
 }
