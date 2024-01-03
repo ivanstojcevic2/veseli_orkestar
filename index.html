@@ -16,15 +16,20 @@
       href="https://fonts.googleapis.com/css2?family=Alkatra:wght@600&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Veseli Orkestar</title>
   </head>
   <body>
     <div id="navbar-container">
       <ul id="navbar">
-        <li class="navbar-item"><a href="#heading">NASLONICA</a></li>
-        <li class="navbar-item"><a href="#o-slikovnici">O SLIKOVNICI</a></li>
+        <li class="navbar-item"><a href="#heading">NASLOVNICA</a></li>
+        <li class="navbar-item"><a href="#about">O SLIKOVNICI</a></li>
         <li class="navbar-item"><a href="">O AUTORICI</a></li>
         <li class="navbar-item"><a href="">KONTAKT</a></li>
         <li class="navbar-item">
@@ -62,15 +67,15 @@
           <font color="purple">R</font>
         </h1>
       </div>
-      <div class="inline-div" id="o-slikovnici">
+      <div class="inline-div">
         <p style="font-family: Caveat">
           Slikovnica 'Veseli orkestar' predstavlja šarmantno i edukativno koje
-          najmlađe čitatelje vodi u svijet mašte kroz 15 šarmantnih pjesama i
-          ilustracija.<br />
+          najmlađe čitatelje vodi u svijet mašte kroz 15 zanimljivih pjesama i
+          šarenih ilustracija.<br />
           <br />
           Ova jedinstvena knjiga za djecu istražuje različite teme, od mrava na
-          kiši do šarenih podvodnih svjetova, donoseći mnoštvo uzbudljivih priča
-          koje će oduševiti male čitatelje.<br />
+          kiši do podvodnih svjetova, donoseći mnoštvo uzbudljivih priča koje će
+          oduševiti male čitatelje.<br />
         </p>
       </div>
       <div class="inline-div">
@@ -80,24 +85,51 @@
           čarobne trenutke svake priče, potičući dječju maštu i kreativnost.<br />
           <br />
           'Veseli orkestar' nije samo knjiga, već čarobna kolekcija pjesama koja
-          potiče ljubav prema pričama i raznolikost tema među najmlađima."
+          potiče ljubav prema pričama i raznolikost tema među najmlađima.
         </p>
       </div>
     </div>
 
     <div class="background-image" id="123">
-      <h2 class="heading-over-image">EDUKATIVNA, ZANIMLJIVA, MODERNA</h2>
+      <h2 class="podnaslov">EDUKATIVNA, ZANIMLJIVA, MODERNA</h2>
       <img src="images/lav_puž_koka.png" width="100%" />
     </div>
     <div class="inline-div">
+      <h2 class="podnaslov-2">SADRŽAJ</h2>
       <p style="font-family: Caveat">
-        Slikovnica s 15 pjesama i ilustracija
+        Slikovnica s 15 pjesama - tekstova<br />
+        i ilustracija
         <br />
-        usb memorija s uglazbljenim pjesmama
+        USB memorija s uglazbljenim pjesmama<br>
+        <br>
+        Popis pjesama:
+        <ul id="popis-pjesama-lista">
+          <li>Afričko prijateljstvo</li>
+          <li>Bezbrižni puž</li>
+          <li>Koka Zlata</li>
+          <li class="hidden-list-item">Mravi na kiši</li>
+          <li class="hidden-list-item">Mudri mačak</li>
+          <li class="hidden-list-item">Opasnost u moru</li>
+          <li class="hidden-list-item">Sladoled</li>
+          <li class="hidden-list-item">Slatke brige</li>
+          <li class="hidden-list-item">Slon u balonu</li>
+          <li class="hidden-list-item">Sretan rođendan</li>
+          <li class="hidden-list-item">Šumska zgoda</li>
+          <li class="hidden-list-item">Tvrdoglavi dječak</li>
+          <li class="hidden-list-item">Veseli orkestar</li>
+          <li class="hidden-list-item">Žabac i roda</li>
+          <li class="hidden-list-item">Zimska pjesma</li>
+          <li>⋮</li>
+        </ul>
+        <button onclick="toggleList()">Prikaži više</button>
+
       </p>
     </div>
+    <div class="inline-div"><img src="./images/book.png" width="100%" /></div>
 
     <div id="sponzori">
+      <h2 class="podnaslov-2">HVALA NAŠIM SPONZORIMA</h2>
+      <div class="sponzori-container"></div>
       <div class="sponzori-container">
         <a href="https://www.se-kra.hr/" target="_blank">
           <img class="sponzori-icons" src="images/icons/se-kra.png" />
@@ -113,30 +145,26 @@
       <div class="sponzori-container">
         <img class="sponzori-icons" src="images/icons/bambini.png" />
       </div>
+      <div class="sponzori-container"></div>
     </div>
 
     <div id="footer">
-      <div style="text-align: inherit">
-        <h2>FOOTER</h2>
-      </div>
       <div class="cards">
         <div class="footer-cols" id="footer-col-1">
           <div class="footer-cols-inner">
-            <p class="footer-text">Web stranicu izradio Ivan Stojčević</p>
+            <p class="footer-text">2024. Slikovnica Veseli Orkestar</p>
           </div>
         </div>
         <div class="footer-cols" id="footer-col-2">
           <div class="footer-cols-inner">
-            <p class="footer-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
+            <p class="footer-text">Ova stranica ne koristi kolačiće.</p>
           </div>
         </div>
         <div class="footer-cols" id="footer-col-3">
           <div class="footer-cols-inner">
             <p class="footer-text">
-              Za sve upite, molimo da nam se obratite na
-              <a href="mailto:slikovnicaveseliorkestar@gmail.com">MAIL</a>
+              Za sve upite, informacije i suradnju, molimo da nam se obratite na
+              <a href="mailto:slikovnicaveseliorkestar@gmail.com"><strong>MAIL</strong></a>
             </p>
           </div>
         </div>
@@ -170,6 +198,7 @@
         </div>
       </div>
     </div>
+    <div id="bottom">Web dizajn - Ivan Stojčević</div>
     <script src="scripts/script.js"></script>
   </body>
 </html>
