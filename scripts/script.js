@@ -27,5 +27,22 @@ document.addEventListener("DOMContentLoaded", function () {
   scaleUpAndDown();
 
   // Repeat the animation using setInterval
-  setInterval(scaleUpAndDown, 2000); // Adjust the interval as needed
+  setInterval(scaleUpAndDown, 2000);
 });
+
+function toggleList() {
+  var itemList = document
+    .getElementById("popis-pjesama-lista")
+    .getElementsByTagName("li");
+  for (var i = 3; i < itemList.length; i++) {
+    if (itemList[i].classList.contains("hidden-list-item")) {
+      itemList[i].classList.remove("hidden-list-item");
+    } else {
+      itemList[i].classList.add("hidden-list-item");
+    }
+  }
+
+  var buttonText = document.querySelector("button").textContent;
+  document.querySelector("button").textContent =
+    buttonText === "Prikaži više" ? "Prikaži manje" : "Prikaži više";
+}
