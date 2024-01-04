@@ -87,6 +87,21 @@ button:hover {
   padding-top: 42%;
 }
 
+#sadrzaj {
+  padding-top: 5%;
+}
+
+#sadrzaj-child {
+  padding-top: 5%;
+}
+
+#music {
+  padding-top: 15%;
+  position: relative;
+  font-family: Caveat;
+  overflow: hidden;
+}
+
 #popis-pjesama-lista {
   list-style-type: none;
   padding: 0;
@@ -96,10 +111,34 @@ button:hover {
   font-size: 16pt;
 }
 
+#buy-now {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+#buy-now img {
+  padding-top: 2%;
+  width: 320px;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+#buy-now img:hover {
+  transform: scale(1.1);
+}
+
+#o-autorici {
+  text-align: center;
+  padding-top: 5%;
+}
+
 #sponzori {
   text-align: center;
   padding-top: 5%;
-  padding-bottom: 5%;
+  padding-bottom: 2%;
 }
 
 #footer {
@@ -163,6 +202,23 @@ button:hover {
 }
 
 .podnaslov-2 {
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  color: rgb(20, 34, 63);
+}
+
+.podnaslov-3 {
+  position: absolute;
+  left: 50%;
+  text-align: center;
+  padding-top: 13%;
+  transform: translate(-50%, -50%);
+  font-family: "Nunito", sans-serif;
+  color: rgb(20, 34, 63);
+}
+
+.podnaslov-4 {
+  padding-top: 20%;
   text-align: center;
   font-family: "Nunito", sans-serif;
   color: rgb(20, 34, 63);
@@ -296,30 +352,56 @@ button:hover {
 }
 
 @media only screen and (max-width: 1079px) {
-  #navbar-container {
-    display: none;
-  }
-
   h1 {
     font-size: 36pt;
     display: block;
   }
-  h2 {
-    font-size: 10pt;
-  }
+
   p {
     font-size: 20pt;
+  }
+
+  #navbar-container {
+    display: none;
   }
 
   #autor {
     font-size: 16pt;
   }
 
+  #music img {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  #music-text-container {
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #music-iframe-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   .podnaslov {
-    font-size: 13pt;
+    font-size: 10pt;
   }
 
   .podnaslov-2 {
+    font-size: 18pt;
+  }
+
+  .podnaslov-3 {
+    font-size: 18pt;
+  }
+
+  .podnaslov-4 {
     font-size: 18pt;
   }
 
@@ -350,6 +432,19 @@ button:hover {
   #h1-veseli {
     padding-right: 5%;
   }
+
+  #music img {
+    width: 100%;
+  }
+  #music-text-container {
+    text-align: center;
+    transform: translate(20%);
+  }
+
+  #music-iframe-container {
+    transform: translate(130%);
+  }
+
   .podnaslov {
     font-size: 26pt;
   }
@@ -358,20 +453,27 @@ button:hover {
     font-size: 26pt;
   }
 
-  .navbar-item {
-    display: inline-block;
-    border: 2px solid transparent;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  .podnaslov-3 {
+    font-size: 26pt;
   }
 
-  .navbar-item a {
-    display: block;
+  .podnaslov-4 {
+    font-size: 26pt;
+  }
+
+  .navbar-item {
     font-family: Alkatra, sans-serif;
     text-decoration: none;
     color: white;
+    display: inline-block;
+    border: 2px solid transparent;
+  }
+
+  .navbar-item-text {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .navbar-item:hover {
@@ -381,6 +483,23 @@ button:hover {
     backdrop-filter: blur(10px);
     animation: fadeIn 0.5s;
   }
+
+  .navbar-item img {
+    width: 30px;
+    display: inline-block;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    vertical-align: middle;
+  }
+
+  .music-inline {
+    position: absolute;
+    width: 40%;
+    padding-top: 15%;
+  }
+
   .sponzori-container {
     width: 19%;
     display: inline-block;
