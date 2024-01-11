@@ -31,20 +31,31 @@
         <a href="#heading"><li class="navbar-item navbar-item-text">NASLOVNICA</li></a>
         <a href="#about"><li class="navbar-item navbar-item-text">O SLIKOVNICI</li></a>
         <a href="#o-autorici"><li class="navbar-item navbar-item-text">O AUTORICI</li></a>
-        <a href="narudzba.html"><li class="navbar-item navbar-item-text">KONTAKT</li></a>
+        <a href="kontakt.html"><li class="navbar-item navbar-item-text">KONTAKT</li></a>
         <a href="#buy-now"><li class="navbar-item"><img src="images/icons/shopping_bag_white.png"></li></a>
       </ul>
     </div>
+
     <div id="heading">
-      <h2 id="autor" class="" style="color: beige; font-family: Bookman">
-        <i>Marijana Stojčević</i>
+      <h2 id="autor">
+        Marijana Stojčević
       </h2>
+      <img id="koka" class="animate-top" src="./images/koka.png" />
       <img id="naslov" class="animate-top" src="./images/naslov.png" />
       <img id="mjesec" class="animate-top" src="./images/mjesec.png" />
       <img id="kuce" class="animate-left" src="./images/kuce.png" />
       <img id="bg" src="./images/veseli_orkestar_naslovnica_bg.png" />
     </div>
-    <div class="container" id="about">
+    <div class="container" id="about" style="padding-top: 8%;">
+
+      <span id="mobile-navbar-wrapper">
+        <span id="mobile-navbar-container">
+          <a href="#heading" class="mobile-nav-button"><p>NASLOVNICA</p></a>
+          <a href="./kontakt.html" class="mobile-nav-button"><p>KONTAKT</p></a>
+          <a href="./kontakt.html" class="mobile-nav-button"><img src="images/icons/shopping_bag_white.png" id="shopping-bag-icon"></a>
+        </span>
+      </span>
+
       <div>
         <h1 style="font-family: rubik doodle shadow" id="h1-veseli">
           <font color="violet">V</font>
@@ -134,7 +145,11 @@
         <p>
           Zapjevajte i zaplešite uz 15
           uglazbljenih pjesmica iz
-          slikovnice Veseli Orkestar.
+          slikovnice Veseli Orkestar. <br>
+          <br>
+          Za biše pjesmica, kliknite<br>
+          <br>
+          <a href="https://www.youtube.com/@VeseliOrkestar" target="_blank" title="YouTube kanal"><button class="button-2">OVDJE</button></a>
         </p>
       </div>
       <div class="music-inline" id="music-iframe-container">
@@ -153,7 +168,7 @@
 
     <div id="buy-now">
       <h2 class="podnaslov-2">NARUČITE SLIKOVNICU</h2>
-      <a href="narudzba.html"><img src="images/icons/shopping_bag_full.png"></a>
+      <a href="kontakt.html"><img src="images/icons/shopping_bag_full.png"></a>
     </div>
 
     <div id="o-autorici">
@@ -217,19 +232,30 @@
       <div class="cards">
         <div class="footer-cols" id="footer-col-1">
           <div class="footer-cols-inner">
-            <p class="footer-text">2024. Slikovnica Veseli Orkestar</p>
+            <p class="footer-text">
+              2024. Slikovnica Veseli Orkestar<br>
+              <br>
+              Ova stranica ne koristi kolačiće
+            </p>
           </div>
         </div>
         <div class="footer-cols" id="footer-col-2">
           <div class="footer-cols-inner">
-            <p class="footer-text">Ova stranica ne koristi kolačiće.</p>
+            <p class="footer-text">Slikovnicu izdala Gradska knjižnica Dugo Selo<br />
+              <br />
+              Slikovnica se isporučuje isključivo u<br />
+              fizičkom obliku.</p>
           </div>
         </div>
         <div class="footer-cols" id="footer-col-3">
           <div class="footer-cols-inner">
             <p class="footer-text">
               Za sve upite, informacije i suradnju, molimo da nam se obratite na
-              <a href="mailto:slikovnicaveseliorkestar@gmail.com"><strong>MAIL</strong></a>
+              <a href="mailto:slikovnicaveseliorkestar@gmail.com"
+                ><strong>MAIL</strong></a
+              >
+              ili klikom na <a href="kontakt.html"><strong>LINK</strong></a
+              >.
             </p>
           </div>
         </div>
@@ -252,7 +278,7 @@
               </a>
             </div>
             <div class="social-media">
-              <a href="">
+              <a href="https://www.youtube.com/@VeseliOrkestar" target="_blank">
                 <img
                   class="social-media-icons"
                   src="./images/icons/youtube.png"
