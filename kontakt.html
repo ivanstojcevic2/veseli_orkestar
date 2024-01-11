@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alkatra:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <title>Kontakt</title>
+  </head>
+  <body>
+    <div id="navbar-container">
+      <ul id="navbar" class="sticky">
+        <a href="./index.html#heading"
+          ><li class="navbar-item navbar-item-text">NASLOVNICA</li></a
+        >
+        <a href="./index.html#about"
+          ><li class="navbar-item navbar-item-text">O SLIKOVNICI</li></a
+        >
+        <a href="./index.html#o-autorici"
+          ><li class="navbar-item navbar-item-text">O AUTORICI</li></a
+        >
+        <a href="kontakt.html"
+          ><li class="navbar-item navbar-item-text">KONTAKT</li></a
+        >
+        <a href="kontakt.html"
+          ><li class="navbar-item">
+            <img src="images/icons/shopping_bag_white.png" /></li
+        ></a>
+      </ul>
+    </div>
+
+    
+
+    <div id="kontakt-heading">
+      <img src="./images/slon_u_balonu.jpg" />
+    </div>
+
+    <div id="empty-div" style="padding-top: 22%"></div>
+
+    <div id="content">
+
+      <div id="mobile-navbar-wrapper">
+        <div id="mobile-navbar-container">
+          <a href="index.html" class="mobile-nav-button"><p>NASLOVNICA</p></a>
+          <a href="./kontakt.html" class="mobile-nav-button"><p>KONTAKT</p></a>
+          <a href="./kontakt.html" class="mobile-nav-button"><img src="images/icons/shopping_bag_white.png" id="shopping-bag-icon"></a>
+        </div>
+      </div>
+
+      <h1 class="podnaslov-2">KONTAKT</h1>
+      <h2>Za sve upite, informacije i suradnju, obratite se niže:</h2>
+
+      <form name="contactform" method="post" action="send_form_email.php">
+        <table id="contact-table" align="center">
+          <tbody>
+            <tr>
+              <td valign="center">
+                Ime: <font color="red">*</font><br />
+                <input
+                  type="text"
+                  name="first_name"
+                  maxlength="50"
+                  size="30"
+                  placeholder="Ime"
+                  required
+                /><br />
+              </td>
+            </tr>
+            <tr>
+              <td valign="center">
+                Prezime: <font color="red">*</font><br />
+                <input
+                  type="text"
+                  name="last_name"
+                  maxlength="50"
+                  size="30"
+                  placeholder="Prezime"
+                  required
+                /><br />
+              </td>
+            </tr>
+            <tr>
+              <td valign="center">
+                Email adresa: <font color="red">*</font><br />
+                <input
+                  type="text"
+                  name="email"
+                  maxlength="80"
+                  size="30"
+                  placeholder="mail@mail.com"
+                  required
+                /><br />
+              </td>
+            </tr>
+            <tr>
+              <td valign="top">
+                Poruka: <font color="red">*</font><br />
+                <textarea
+                  name="comments"
+                  maxlength="1000"
+                  cols="50"
+                  rows="6"
+                  placeholder="Vaša poruka"
+                  required
+                ></textarea
+                ><br />
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: center">
+                <input type="submit" value="Pošalji poruku" class="button" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+
+      <div id="footer" style="margin-top: 5%">
+        <div class="cards">
+          <div class="footer-cols" id="footer-col-1">
+            <div class="footer-cols-inner">
+              <p class="footer-text">
+                2024. Slikovnica Veseli Orkestar<br />
+                <br />
+                Ova stranica ne koristi kolačiće
+              </p>
+            </div>
+          </div>
+          <div class="footer-cols" id="footer-col-2">
+            <div class="footer-cols-inner">
+              <p class="footer-text">
+                Slikovnicu izdala Gradska knjižnica Dugo Selo<br />
+                <br />
+                Slikovnica se isporučuje isključivo u<br />
+                fizičkom obliku.
+              </p>
+            </div>
+          </div>
+          <div class="footer-cols" id="footer-col-3">
+            <div class="footer-cols-inner">
+              <p class="footer-text">
+                Za sve upite, informacije i suradnju, molimo da nam se obratite na
+                <a href="mailto:slikovnicaveseliorkestar@gmail.com"
+                  ><strong>MAIL</strong></a
+                >
+                ili klikom na <a href="kontakt.html"><strong>LINK</strong></a
+                >.
+              </p>
+            </div>
+          </div>
+          <div class="footer-cols" id="footer-col-4">
+            <div class="footer-cols-inner">
+              <p class="footer-text">Posjetite nas na društvenim mrežama</p>
+              <div class="social-media">
+                <a href=""
+                  ><img
+                    class="social-media-icons"
+                    src="./images/icons/instagram.png"
+                /></a>
+              </div>
+              <div class="social-media">
+                <a href="">
+                  <img
+                    class="social-media-icons"
+                    src="./images/icons/facebook.png"
+                  />
+                </a>
+              </div>
+              <div class="social-media">
+                <a href="https://www.youtube.com/@VeseliOrkestar" target="_blank">
+                  <img
+                    class="social-media-icons"
+                    src="./images/icons/youtube.png"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="bottom">Web dizajn - Ivan Stojčević</div>
+
+    </div>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
