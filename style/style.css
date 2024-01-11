@@ -15,6 +15,7 @@ p {
   font-size: 20pt;
 }
 
+.button,
 button {
   font-family: "Nunito", sans-serif;
   font-size: 16pt;
@@ -31,6 +32,28 @@ button {
   transition: all 0.25s ease;
 }
 
+.button:hover,
+button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.button-2 {
+  font-family: "Nunito", sans-serif;
+  font-size: 16pt;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 10px;
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 50px;
+  background-color: rgb(255, 0, 0);
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
 button:hover {
   cursor: pointer;
   transform: scale(1.05);
@@ -40,7 +63,7 @@ button:hover {
   text-align: center;
   width: 100%;
   position: fixed;
-  z-index: 1000;
+  z-index: 999;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -80,7 +103,15 @@ button:hover {
   padding-left: 7%;
 }
 
+#koka {
+  position: absolute;
+  z-index: 520;
+  width: 100%;
+}
+
 #autor {
+  color: rgb(255, 238, 0);
+  font-family: "Nunito", sans-serif;
   position: absolute;
   z-index: 530;
   width: 100%;
@@ -112,6 +143,7 @@ button:hover {
 }
 
 #buy-now {
+  width: 100%;
   padding-top: 5%;
   padding-bottom: 5%;
   text-align: center;
@@ -174,7 +206,7 @@ button:hover {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   background-color: rgba(20, 34, 63, 0.5);
-  z-index: 1000;
+  z-index: 999;
   backdrop-filter: blur(5px) opacity(1);
   animation: backdropFadeIn 1s;
 }
@@ -352,6 +384,14 @@ button:hover {
 }
 
 @media only screen and (max-width: 1079px) {
+  #shopping-bag-icon {
+    width: 20px;
+    display: inline-block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    vertical-align: middle;
+  }
+
   h1 {
     font-size: 36pt;
     display: block;
@@ -361,6 +401,35 @@ button:hover {
     margin-left: 2%;
     margin-right: 2%;
     font-size: 20pt;
+  }
+
+  #mobile-navbar-wrapper {
+    width: 100%;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+  #mobile-navbar-container {
+    text-align: center;
+    width: 100%;
+  }
+
+  #mobile-navbar-container a {
+    text-decoration: none;
+  }
+
+  .mobile-nav-button {
+    width: 25%;
+    display: inline-block;
+    border-radius: 50px;
+    background-color: rgb(20, 34, 63);
+    font-family: Alkatra, sans-serif;
+  }
+
+  .mobile-nav-button p {
+    font-size: 10pt;
+    color: white;
   }
 
   #navbar-container {
@@ -379,14 +448,14 @@ button:hover {
   #music-text-container {
     position: absolute;
     text-align: center;
-    top: 25%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
 
   #music-iframe-container {
     position: absolute;
-    top: 50%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -427,6 +496,14 @@ button:hover {
 }
 
 @media only screen and (min-width: 1080px) {
+  #shopping-bag-icon {
+    display: none;
+  }
+
+  #mobile-navbar-container {
+    display: none;
+  }
+
   #autor {
     font-size: 30pt;
   }
@@ -506,4 +583,52 @@ button:hover {
     width: 19%;
     display: inline-block;
   }
+}
+
+#kontakt-heading img {
+  position: fixed;
+  z-index: -100;
+  width: 100%;
+}
+#kontakt-heading h1 {
+  font-size: 30pt;
+}
+
+#content {
+  background-color: white;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Nunito", sans-serif;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  border-radius: 50px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type="text"]:focus {
+  border: 3px solid #555;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  border-radius: 25px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+textarea:focus {
+  border: 3px solid rgb(20, 34, 63);
 }
