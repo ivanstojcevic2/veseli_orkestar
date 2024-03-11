@@ -7,12 +7,13 @@ body {
 }
 
 h1 {
-  font-size: 48pt;
+  font-size: 46pt;
   display: inline-block;
 }
 
 p {
   font-size: 20pt;
+  font-family: "Nunito", sans-serif;
 }
 
 .button,
@@ -129,7 +130,7 @@ button:hover {
 #music {
   padding-top: 15%;
   position: relative;
-  font-family: Caveat;
+  font-family: "Nunito", sans-serif;
   overflow: hidden;
 }
 
@@ -138,7 +139,7 @@ button:hover {
   padding: 0;
   margin: 0;
   padding-bottom: 2%;
-  font-family: Caveat;
+  font-family: "Nunito", sans-serif;
   font-size: 16pt;
 }
 
@@ -393,7 +394,7 @@ button:hover {
   }
 
   h1 {
-    font-size: 36pt;
+    font-size: 32pt;
     display: block;
   }
 
@@ -420,7 +421,7 @@ button:hover {
   }
 
   .mobile-nav-button {
-    width: 25%;
+    width: 30%;
     display: inline-block;
     border-radius: 50px;
     background-color: rgb(20, 34, 63);
@@ -448,14 +449,14 @@ button:hover {
   #music-text-container {
     position: absolute;
     text-align: center;
-    top: 30%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
 
   #music-iframe-container {
     position: absolute;
-    top: 65%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
